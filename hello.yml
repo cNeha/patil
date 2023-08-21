@@ -8,4 +8,4 @@
          organization: Default
          credential_type: Machine
          state: present
-         controller_config_file: "~/tower_cli.cfg"
+        
