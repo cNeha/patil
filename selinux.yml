@@ -2,6 +2,6 @@
   tasks:
     - name: Allow apache to modify files in /srv/git_repos
       community.general.sefcontext:
-        target: '/srv/git_repos(/.*)?'
+        target: '/root/abhi(/.*)?'
         setype: httpd_sys_rw_content_t
         state: present
