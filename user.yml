@@ -7,4 +7,3 @@
         first_name: John
         last_name: Doe
         state: present
-        controller_config_file: "~/tower_cli.cfg"
