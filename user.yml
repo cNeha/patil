@@ -1,0 +1,10 @@
+- hosts: all
+  tasks:
+    - name: Add user
+      user:
+        username: lakshya
+        password: lakshya
+        first_name: John
+        last_name: Doe
+        state: present
+        controller_config_file: "~/tower_cli.cfg"
