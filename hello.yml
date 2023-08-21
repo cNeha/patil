@@ -1,7 +1,11 @@
 ---
-- name: create file
-  hosts: all
+- hosts: all
   tasks:
-    - name: create file
-      debug:
-        msg: hello
+    - name: Add machine credential
+      credential:
+         name: India 
+         description: Team Description
+         organization: Default
+         credential_type: Machine
+         state: present
+         controller_config_file: "~/tower_cli.cfg"
