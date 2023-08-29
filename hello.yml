@@ -1,7 +1,7 @@
 ---
 - hosts: all
   tasks:
-    - name: Add machine credential
+    - name: Print message
       debug:
         msg: "Hello World"
           
