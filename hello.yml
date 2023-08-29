@@ -2,10 +2,7 @@
 - hosts: all
   tasks:
     - name: Add machine credential
-      ansible.controller.credential:
-         name: India 
-         description: Team Description
-         organization: Default
-         credential_type: Machine
-         state: present
+      debug:
+        msg: "Hello World"
+          
         
