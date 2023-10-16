@@ -1,0 +1,17 @@
+- hosts: localhost
+  connection: local
+  tasks:
+   - name: get execution node
+     uri:
+       url: "https://localhost/api/v2/jobs/{{ tower_job_id }}"
+       user: admin
+       password: redhat
+       force_basic_auth: yes
+       validate_certs: false
+     register: execution
+   - debug: msg="{{ execution.json.execution_node }}"
+
+
+
+
+
