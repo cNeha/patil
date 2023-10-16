@@ -3,7 +3,7 @@
   tasks:
    - name: get execution node
      uri:
-       url: "https://localhost/api/v2/jobs/{{ tower_job_id }}"
+       url: "https://192.168.122.66/api/v2/jobs/{{ tower_job_id }}"
        user: admin
        password: redhat
        force_basic_auth: yes
