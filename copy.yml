@@ -1,4 +1,4 @@
- - hosts: 192.168.122.66
+ - hosts: all
    tasks:
       - name: Copy a file to managed hosts
         ansible.builtin.copy:
