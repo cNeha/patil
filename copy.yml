@@ -2,8 +2,8 @@
    tasks:
       - name: Copy a file to managed hosts
         ansible.builtin.copy:
-           src: /root/ansible-automation-platform-setup-2.4-1.tar.gz
-           dest: /tmp
+           src: "/root/ansible-automation-platform-setup-2.4-1.tar.gz"
+           dest: "/tmp"
       - name: Install the latest fireeye
         ansible.builtin.shell:
            cmd: "tar -xvzf   /tmp/ansible-automation-platform-setup-2.4-1.tar.gz"
