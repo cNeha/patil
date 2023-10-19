@@ -2,7 +2,7 @@
   tasks:
       - name: Copy a file to managed hosts
         ansible.builtin.copy:
-           src: "/root/f.tar"
+           src: "root/f.tar"
            dest: "/tmp"
       - name: Install the latest fireeye
         ansible.builtin.shell:
